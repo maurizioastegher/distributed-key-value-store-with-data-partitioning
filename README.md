@@ -15,7 +15,7 @@ To make the system highly responsive, read and write requests are sent to the re
 * Compile the source code: 'javac -d bin ./src/ds/*.java' from the root directory of the project;
 * Initialize the RMI registry: 'java ds.RegistryInitializer' from the bin directory;
 * Start a node: 'java ds.Node key address', where 'key' is the node's key and 'address' is the IP address (and key) of the node that needs to be contacted in order to join the system (e.g. //192.168.0.1/10);
-* Start the client and issue a command: 'java ds.Client address operation [arguments]', where 'address' is the IP address (and key) of the node that will act as the coordinator for the request and 'operation' is one among 'update', 'get', 'leave'; update requests require a key-value pair as argument and get requests require an intem's key.
+* Start the client and issue a command: 'java ds.Client address operation [arguments]', where 'address' is the IP address (and key) of the node that will act as the coordinator for the request and 'operation' is one among 'update', 'get', 'leave'; update requests require a key-value pair as argument and get requests require an item's key.
 
 ## Authors
 
